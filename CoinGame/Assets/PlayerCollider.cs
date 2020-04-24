@@ -33,8 +33,14 @@ public class PlayerCollider : MonoBehaviour
 		else if (other.gameObject.CompareTag("Deathbox"))
 		{
 			//Destroy(gameObject);
-			SceneManager.LoadScene( SceneManager.GetActiveScene().name);
+			SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 		}
+		else if (other.gameObject.CompareTag("Enemy"))
+		{
+			//TODO damage and stuff
+			SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+		}
+
 
 		// switch(true)
 		// {
